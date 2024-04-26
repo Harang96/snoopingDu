@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>유형테스트</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="index_off.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container">
+    <div id="mainBox">
+      <div id="headBox">
+        <img src="image/title.png">
+      </div>
+
+      <div id="selectBox">
+        <div id="question">
+          
+        </div>
+        <div id="firstSelect" class="selectAnswer" onclick="selectAnswer(this);">
+          <div id="firstTitle"></div>
+          <div id="firstPara"></div>
+        </div>
+        <div id="secondSelect" class="selectAnswer" onclick="selectAnswer(this);">
+          <div id="secondTitle"></div>
+          <div id="secondPara"></div>
+        </div>
+        <div id="buttonBox">
+          <button id="prevBtn" class="btn" onclick="changePage(this);">이전</button>
+          <div id="pageIndex"><span id="pageOutput"></span>/6</div>
+          <button id="nextBtn" class="btn" onclick="changePage(this);">다음</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal">
+      <img src="image/start2.png">
+      <button id="startBtn" onclick="startTest();"></button>
+      <button id="refreshBtn" onclick="location.reload();" disabled></button>
+    </div>
+  </div>
+</body>
+</html>

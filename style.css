@@ -1,0 +1,193 @@
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Pretendard-Regular';
+}
+
+#container {
+  /* background-image: url('image/background.png'); */
+  background-image: url('http://goott351.cafe24.com/ljy/dudu/image/background.png');
+  /* background-image: url('image/background.png'); */
+  background-size: cover;
+  width: 1366px;
+  height: 1024px;
+  border-radius: 32px;
+  padding: 51.9px 0 0 0; 
+  position: relative;
+}
+
+#mainBox {
+  width: 100%;
+  height: 100%;
+}
+
+/* headBox */
+#headBox {
+  width: 277px;                     
+  height: 171.2px;
+  margin-left: 74px;
+  margin-bottom: 48px;
+}
+
+#headBox img {
+  width: 100%;
+  height: 100%;
+}
+
+/* selectBox */
+#selectBox {
+  width: 1166px;
+  height: 662px;
+  background-color: #F0F1F3;
+  margin: auto;
+  border-radius: 32px; 
+  padding: 76px 0 0 80px;
+}
+
+#question, #firstSelect, #secondSelect {
+  width: 1006px;
+}
+
+#question {
+  display: flex;
+  align-items: end;
+  height: 28px;
+  font-size: 28px;
+  font-weight: 900;
+  margin-bottom: 28px;
+}
+
+#firstSelect, #secondSelect {
+  height: 183px;
+  padding-left: 60px;
+  padding-top: 60px;
+  border-radius: 32px;
+  margin-bottom: 24px;
+  background-color: white;
+  font-size: 24px;
+}
+
+#firstSelect:hover, #secondSelect:hover {
+  background-color: #FC5D2B;
+  color: white;
+}
+
+#firstTitle, #secondTitle {
+  font-weight: 700;
+}
+
+#firstPara, #secondPara {
+  padding: 15px 0 0 0;
+}
+
+#buttonBox {
+  width: 1006px;
+  margin: 16px 80px 60px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.btn {
+  width: 150px;
+  height: 56px;
+  border-radius: 28px;
+  border: 1px solid #B6B7BB;
+  background-color: #B6B7BB;
+  color: white;
+  font-size: 20px;
+}
+
+.btn:disabled {
+  border: 1px solid #B6B7BB;
+  background-color: rgba(0, 0, 0, 0);
+  color: #B6B7BB;
+}
+
+.btn:hover {
+  background-color: #FC5D2B;
+}
+
+.btn:disabled:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#nextBtn {
+  background-color: #FC5D2B;
+  color: white;
+}
+
+#nextBtn:disabled {
+  border: 1px solid #B6B7BB;
+  background-color: rgba(0, 0, 0, 0);
+  color: #B6B7BB;
+}
+
+#pageIndex {
+  height: 56px;
+  line-height: 56px;
+  font-size: 20px;
+}
+
+#pageIndex span {
+  color: #FC5D2B;
+  font-size: 20px;
+}
+
+#modal {
+  display: none;
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 1366px;
+  height: 1024px;
+  border-radius: 32px;
+  z-index: 10;
+  overflow: auto;
+  padding: 0;
+  overflow: hidden;
+}
+
+#modal img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#startBtn {
+  width: 31.6%;
+  height: 6.3%;
+  position: absolute;
+  left: 34.2%;
+  top: 85.7%;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 50px;
+  border: 0;
+}
+
+#refreshBtn {
+  width: 18.5%;
+  height: 6.3%;
+  position: absolute;
+  left: 74.3%;
+  top: 85%;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 50px;
+  border: 0;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:disabled:hover {
+  cursor: default;
+}
